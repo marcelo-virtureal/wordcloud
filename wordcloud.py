@@ -45,6 +45,8 @@ fm = int(input('Insira a frequência mais baixa, se necessário, ou 0 para ignir
 for i, p in enumerate(lst_limpa_qtd_palavras):
     if p == fm:
         frequencia_minima = lst_limpa_qtd_palavras[i:]
+    elif p == 0:
+        frequencia_minima = []
 for palavra in frequencia_minima:
     if type(palavra) == int:
         frequencia_minima.remove(palavra)
