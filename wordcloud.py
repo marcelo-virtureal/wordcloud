@@ -43,10 +43,10 @@ for palavra in stop_words:
 
 fm = int(input('Insira a frequência mais baixa, se necessário, ou 0 para ignirar: '))
 for i, p in enumerate(lst_limpa_qtd_palavras):
-    if p == fm:
-        frequencia_minima = lst_limpa_qtd_palavras[i:]
-    elif p == 0:
+    if fm == 0:
         frequencia_minima = []
+    elif p == fm:
+        frequencia_minima = lst_limpa_qtd_palavras[i:]
 for palavra in frequencia_minima:
     if type(palavra) == int:
         frequencia_minima.remove(palavra)
